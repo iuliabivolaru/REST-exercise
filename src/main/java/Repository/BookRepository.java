@@ -9,11 +9,13 @@ import java.util.List;
  * Created by iuliab on 23.10.2015.
  */
 public interface BookRepository {
+
     List<Book> findAllBooks();
 
     List<ReviewBook> findAllReviews();
 
     Book findBook(String bookId);
+
     List<Book> getBooks(int start, int end);
 
     void create(Book book);
@@ -21,4 +23,6 @@ public interface BookRepository {
     Book update(Book book, String bookId);
 
     boolean delete(String bookId);
+
+    int countBooks();
 }
