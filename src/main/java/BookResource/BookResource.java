@@ -3,6 +3,7 @@ package BookResource;
 import BookModel.Book;
 import Repository.BookRepository;
 import Repository.BookRepositoryStub;
+import Service.BookService;
 
 import javax.imageio.ImageIO;
 import javax.print.attribute.standard.Media;
@@ -25,10 +26,11 @@ import java.util.stream.Stream;
 
 @Path("/books") // http:/localhost:8080/books
 public class BookResource {
-    private BookRepository bookRepository = new BookRepositoryStub();
 
-    public void setBookRepository(BookRepository bookRepository) {
-        this.bookRepository = bookRepository;
+    private BookService bookService = new BookService();
+
+    public void setBookService(BookService bookService) {
+        this.bookService = bookService;
     }
 
     /*@DELETE
@@ -87,12 +89,14 @@ public class BookResource {
 
     @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
     public Response getAllBooks(){
-        List<Book> books = bookRepository.findAllBooks();
+        System.out.println("sss");
+        List<Book> books = bookService.findAllBooks();
         //return bookRepository.findAllBooks();
         if(books == null){
             return Response.status(Response.Status.NOT_FOUND).build();
         }
         return  Response.ok().entity(new GenericEntity<List<Book>>(books){}).build();
+
     }
 
     @GET
@@ -106,7 +110,7 @@ public class BookResource {
             return Response.status(Response.Status.BAD_REQUEST).build();
         }
 
-        Book book = bookRepository.findBook(bookId);
+        Book book = bookService.findBook(bookId);
 
         if(book == null){
             return Response.status(Response.Status.NOT_FOUND).build();
@@ -141,12 +145,12 @@ public class BookResource {
         System.out.println("Getting book ID:" + start + " " + end);
 
        if (author == null && title == null) {
-           List<Book> books = bookRepository.getBooks(start, end);
+           List<Book> books = bookService.getBooks(start, end);
            return Response.ok().entity(new GenericEntity<List<Book>>(books) {
            }).build();
        }
         System.out.println("Getting book ID:" + author + " " + title);
-        Stream<Book> bookStream = bookRepository.findAllBooks().stream();
+        Stream<Book> bookStream = bookService.findAllBooks().stream();
         if (author != null) {
             bookStream = bookStream.filter(w -> w.getAuthors().toLowerCase().contains(author.toLowerCase()));
         }
@@ -154,8 +158,8 @@ public class BookResource {
             bookStream = bookStream.filter(w -> w.getTitle().toLowerCase().contains(title.toLowerCase()));
         }
         return Response.ok().entity(new GenericEntity<List<Book>>(bookStream.collect(Collectors.toList())) {}).build();
-    }*/
-
+    }
+*/
 
 }
 
