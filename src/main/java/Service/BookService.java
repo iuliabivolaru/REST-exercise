@@ -3,20 +3,32 @@ package Service;
 import BookModel.Book;
 import Repository.BookRepository;
 import Repository.BookRepositoryStub;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * Created by iuliab on 29.10.2015.
  */
+@Service("bookService")
 public class BookService {
 
     private BookRepository bookRepository;
 
     public BookService(){
 
-        bookRepository = new BookRepositoryStub();
+    }
 
+    @Autowired
+    public BookService(BookRepository bookRepository) {
+        System.out.println("Constructor injection!");
+        this.bookRepository = bookRepository;
+    }
+
+    //@Autowired
+    public void setBookRepository(BookRepository bookRepository){
+        this.bookRepository = bookRepository;
     }
 
     public void createBook(Book book){
@@ -58,4 +70,6 @@ public class BookService {
 
         return bookRepository.countBooks();
     }
+
+
 }

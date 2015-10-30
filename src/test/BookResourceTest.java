@@ -22,7 +22,7 @@ public class BookResourceTest {
     public void setup(){
 
         bookService = mock(BookService.class);
-        bookResource = new BookResource();
+        //bookResource = new BookResource();
         //bookResource.setBookRepository(bookRepository);
     }
 

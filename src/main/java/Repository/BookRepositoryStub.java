@@ -3,6 +3,7 @@ package Repository;
 import BookModel.Book;
 import BookModel.Category;
 import BookModel.ReviewBook;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
 /**
  * Created by iuliab on 23.10.2015.
  */
+@Repository("bookRepository")
 public class BookRepositoryStub implements BookRepository {
 
     List<Book> books;

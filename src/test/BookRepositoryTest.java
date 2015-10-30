@@ -45,7 +45,7 @@ public class BookRepositoryTest {
     public void givenANewBook_createBook_createsTheBook() {
 
         int bookCountBefore = bookRepository.countBooks();
-        bookRepository.create(book1);
+        bookRepository.create(book3);
         int bookCountAfter = bookRepository.countBooks();
         Book findNewAddedBook = bookRepository.findBook(String.valueOf(book1.getId()));
 

@@ -9,6 +9,7 @@ import static org.junit.Assert.*;
  * Created by iuliab on 26.10.2015.
  */
 public class BookClientTest {
+
     @Test
     public void testDelete(){
         BookClient client = new BookClient();
@@ -53,7 +54,7 @@ public class BookClientTest {
     public void testGetWithBadRequest() {
         BookClient client = new BookClient();
 
-        client.get("2");
+        client.get("3");
     }
 
     @Test(expected=RuntimeException.class)

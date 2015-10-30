@@ -4,6 +4,8 @@ import BookModel.Book;
 import Repository.BookRepository;
 import Repository.BookRepositoryStub;
 import Service.BookService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.imageio.ImageIO;
 import javax.print.attribute.standard.Media;
@@ -23,25 +25,38 @@ import java.util.stream.Stream;
 /**
  * Created by iuliab on 23.10.2015.
  */
-
+@Component("bookResource")
 @Path("/books") // http:/localhost:8080/books
 public class BookResource {
 
-    private BookService bookService = new BookService();
 
+    private BookService bookService;
+
+    public BookResource(){
+
+    }
+
+    @Autowired
+    public BookResource(BookService bookService){
+        this.bookService = bookService;
+    }
+
+    //@Autowired
     public void setBookService(BookService bookService) {
         this.bookService = bookService;
     }
 
-    /*@DELETE
+    @DELETE
     @Path("{bookId}")
-    @Consumes(MediaType.APPLICATION_JSON)
+    //@Consumes(MediaType.APPLICATION_JSON)
     @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
     public Response delete(@PathParam("bookId") String bookId){
         System.out.println(bookId);
-        bookRepository.delete(bookId);
+        boolean isDeleted = bookService.delete(bookId);
+        if(isDeleted)
+            return Response.ok().build();
+        return Response.status(Response.Status.NOT_FOUND).build();
 
-        return Response.ok().build();
     }
     @PUT
     @Path("{bookId}")
@@ -49,7 +64,7 @@ public class BookResource {
     @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
     public Response update(@PathParam("bookId") String bookId, Book book){
         System.out.println(book.getId());
-        book = bookRepository.update(book);
+        book = bookService.update(book, bookId);
 
         return Response.ok().entity(book).build();
     }
@@ -58,15 +73,13 @@ public class BookResource {
     @Path("/book") // http:/localhost:8080/books/book
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
-    public Book createBook(Book book){
-        System.out.println(book.getTitle());
-        System.out.println(book.getAuthors());
+    public Response createBook(Book book){
+        
+        bookService.create(book);
 
-        bookRepository.create(book);
-
-        return book;
+        return Response.ok().entity(book).build();
     }
-    @POST
+    /*@POST
     @Path("/book") // http:/localhost:8080/books/book
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
     @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
@@ -81,7 +94,7 @@ public class BookResource {
         Book book = new Book();
         book.setTitle(formParams.getFirst("title"));
         book.setAuthors(formParams.getFirst("authors"));
-        bookRepository.create(book);
+        bookService.create(book);
         return book;
     }*/
 
