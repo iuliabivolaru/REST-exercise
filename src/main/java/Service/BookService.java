@@ -31,9 +31,9 @@ public class BookService {
         this.bookRepository = bookRepository;
     }
 
-    public void createBook(Book book){
+    public Book createBook(Book book){
 
-        bookRepository.create(book);
+        return bookRepository.create(book);
     }
 
     public Book findBook(String bookId){
@@ -51,9 +51,9 @@ public class BookService {
         return bookRepository.getBooks(start, end);
     }
 
-    public void create(Book book){
+    public Book create(Book book){
 
-        bookRepository.create(book);
+        return bookRepository.create(book);
     }
 
     public Book update(Book book, String bookId){

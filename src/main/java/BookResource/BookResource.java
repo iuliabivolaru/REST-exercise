@@ -75,9 +75,9 @@ public class BookResource {
     @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
     public Response createBook(Book book){
         
-        bookService.create(book);
+        Book createdBook = bookService.create(book);
 
-        return Response.ok().entity(book).build();
+        return Response.ok().entity(createdBook).build();
     }
     /*@POST
     @Path("/book") // http:/localhost:8080/books/book
@@ -146,6 +146,17 @@ public class BookResource {
         }
         return Response.ok().entity(file).build();
     }
+
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    @Path("size")
+    public Response getBooksSize(){
+
+        int booksSize = bookService.countBooks();
+
+        return Response.ok().entity(booksSize).build();
+    }
+
 
     /*@GET
     @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})

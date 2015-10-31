@@ -18,7 +18,7 @@ public interface BookRepository {
 
     List<Book> getBooks(int start, int end);
 
-    void create(Book book);
+    Book create(Book book);
 
     Book update(Book book, String bookId);
 

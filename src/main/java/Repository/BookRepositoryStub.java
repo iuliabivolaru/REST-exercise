@@ -54,12 +54,14 @@ public class BookRepositoryStub implements BookRepository {
     }
 
     @Override
-    public void create(Book book) {
+    public Book create(Book book) {
 
         boolean bookAlreadyExists = books.stream().anyMatch(b -> b.getISBN()!= null && b.getISBN().equals(book.getISBN()));
 
         if(!bookAlreadyExists)
             books.add(book);
+
+        return book;
 
     }
 
