@@ -1,8 +1,7 @@
-import BookModel.Book;
-import BookModel.Category;
+import bookModel.Book;
+import bookModel.Category;
 import Repository.BookRepository;
 import Repository.BookRepositoryStub;
-import org.assertj.core.api.Assertions;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,6 +13,9 @@ import static org.assertj.core.api.Assertions.*;
 /**
  * Created by iuliab on 29.10.2015.
  */
+
+//TODO: package names lowerCase!!
+//TODO: no commentaries!!
 public class BookRepositoryTest {
     private BookRepository bookRepository;
     private List<Book> books;

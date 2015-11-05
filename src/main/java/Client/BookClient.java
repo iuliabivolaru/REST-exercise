@@ -1,6 +1,6 @@
 package Client;
 
-import BookModel.Book;
+import bookModel.Book;
 
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.Client;

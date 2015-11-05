@@ -1,7 +1,7 @@
 package Repository;
 
-import BookModel.Book;
-import BookModel.ReviewBook;
+import bookModel.Book;
+import bookModel.Review;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ public interface BookRepository {
 
     List<Book> findAllBooks();
 
-    List<ReviewBook> findAllReviews();
+    List<Review> findAllReviews();
 
     Book findBook(String bookId);
 
@@ -25,4 +25,14 @@ public interface BookRepository {
     boolean delete(String bookId);
 
     int countBooks();
+
+   /* List<Review> findAllBookReviews(String bookId);
+
+    Review findReviewById(String bookId, String reviewId);
+
+    boolean deleteBookReview(String bookId, String reviewId);
+
+    Review updateReview(String bookId, String reviewId, Review review);
+
+    Review createReview(String bookId, Review review);*/
 }

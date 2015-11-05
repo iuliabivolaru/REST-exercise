@@ -1,30 +1,21 @@
 package BookResource;
 
-import BookModel.Book;
-import Repository.BookRepository;
-import Repository.BookRepositoryStub;
+import bookModel.Book;
 import Service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import javax.imageio.ImageIO;
-import javax.print.attribute.standard.Media;
 import javax.ws.rs.*;
-import javax.ws.rs.core.GenericEntity;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.MultivaluedHashMap;
-import javax.ws.rs.core.Response;
+import javax.ws.rs.core.*;
 
-import java.awt.image.BufferedImage;
 import java.io.*;
+import java.net.URI;
 import java.util.List;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Created by iuliab on 23.10.2015.
  */
+//TODO delete numele componentei, e redundant
 @Component("bookResource")
 @Path("/books") // http:/localhost:8080/books
 public class BookResource {
@@ -48,7 +39,6 @@ public class BookResource {
 
     @DELETE
     @Path("{bookId}")
-    //@Consumes(MediaType.APPLICATION_JSON)
     @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
     public Response delete(@PathParam("bookId") String bookId){
         System.out.println(bookId);
@@ -56,6 +46,7 @@ public class BookResource {
         if(isDeleted)
             return Response.ok().build();
         return Response.status(Response.Status.NOT_FOUND).build();
+
 
     }
     @PUT
@@ -66,6 +57,9 @@ public class BookResource {
         System.out.println(book.getId());
         book = bookService.update(book, bookId);
 
+        if(book == null)
+            return Response.status(Response.Status.NOT_FOUND).build();
+
         return Response.ok().entity(book).build();
     }
 
@@ -73,33 +67,22 @@ public class BookResource {
     @Path("/book") // http:/localhost:8080/books/book
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
-    public Response createBook(Book book){
-        
-        bookService.create(book);
+    public Response createBook(Book book, @Context UriInfo uriInfo){
 
-        return Response.ok().entity(book).build();
-    }
-    /*@POST
-    @Path("/book") // http:/localhost:8080/books/book
-    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-    @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
-    public Book createBookParams(MultivaluedHashMap<String, String> formParams) {
-        System.out.println(formParams.getFirst("title"));
-        System.out.println(formParams.getFirst("authors"));
+        if(receivedTitleAndIdParametersAreValid(book.getTitle(), String.valueOf(book.getId())))
+            bookService.create(book);
+        else{
 
-        if(formParams.getFirst("title") == null){
-            //return Response.serverError().entity("UUID cannot be blank").build();
+            ErrorBean errorBean = new ErrorBean();
+            errorBean.setErrorCode("validation.missing.title");
+            return Response.status(Response.Status.BAD_REQUEST).entity(errorBean).build();
         }
+        String uri = uriInfo.getAbsolutePath() + "/" + book.getId();
 
-        Book book = new Book();
-        book.setTitle(formParams.getFirst("title"));
-        book.setAuthors(formParams.getFirst("authors"));
-        bookService.create(book);
-        return book;
-    }*/
+        return Response.ok().location(URI.create(uri)).entity(book).build();
+    }
 
     @GET
-
     @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
     public Response getAllBooks(){
         System.out.println("sss");
@@ -123,8 +106,9 @@ public class BookResource {
             return Response.status(Response.Status.BAD_REQUEST).build();
         }
 
-        Book book = bookService.findBook(bookId);
-
+        //Book book = bookService.findBook(bookId);
+        Book book = bookService.findBookFromDB(Integer.parseInt(bookId));
+        System.out.println("Book found or not");
         if(book == null){
             return Response.status(Response.Status.NOT_FOUND).build();
         }
@@ -173,6 +157,12 @@ public class BookResource {
         return Response.ok().entity(new GenericEntity<List<Book>>(bookStream.collect(Collectors.toList())) {}).build();
     }
 */
+    public boolean receivedTitleAndIdParametersAreValid(String title, String id){
+
+        if(title.isEmpty() || id == null)
+            return false;
+        return true;
+    }
 
 }
 

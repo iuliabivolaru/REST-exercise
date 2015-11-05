@@ -1,10 +1,10 @@
 package Service;
 
-import BookModel.Book;
+import bookModel.Book;
 import Repository.BookRepository;
-import Repository.BookRepositoryStub;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import Repository.BookRepositoryHibernate;
 
 import java.util.List;
 
@@ -15,6 +15,7 @@ import java.util.List;
 public class BookService {
 
     private BookRepository bookRepository;
+    private BookRepositoryHibernate bookRepositoryHibernate;
 
     public BookService(){
 
@@ -71,5 +72,9 @@ public class BookService {
         return bookRepository.countBooks();
     }
 
+    public Book findBookFromDB(Integer id){
+
+        return bookRepositoryHibernate.findBook(id);
+    }
 
 }

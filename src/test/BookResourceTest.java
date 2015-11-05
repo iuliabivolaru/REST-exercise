@@ -1,20 +1,17 @@
-import BookModel.Book;
+import bookModel.Book;
 import BookResource.BookResource;
-import Repository.BookRepository;
-import Repository.BookRepositoryStub;
 import Service.BookService;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import javax.xml.ws.Response;
-
+import static org.assertj.core.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 /**
  * Created by iuliab on 28.10.2015.
  */
 public class BookResourceTest {
+
     private BookResource bookResource;
     private BookService bookService;
 
@@ -22,11 +19,11 @@ public class BookResourceTest {
     public void setup(){
 
         bookService = mock(BookService.class);
-        //bookResource = new BookResource();
-        //bookResource.setBookRepository(bookRepository);
+        bookResource = new BookResource();
+        bookResource.setBookService(bookService);
     }
 
-   /* @Test
+    @Test
     public void givenBookId_GetById_returnTheCorrectBook(){
 
         Book book = new Book();
@@ -43,10 +40,11 @@ public class BookResourceTest {
     public void givenNonExistingBookId_GetById_returnNotFound(){
         Book book = new Book();
 
-        when(bookService.findBook("3")).thenCallRealMethod();
+        when(bookService.findBook("7")).thenReturn(null);
 
-        bookResource.getBook("3");
+        javax.ws.rs.core.Response response = bookResource.getBook("7");
 
-        verify(bookService).findBook("3");
-    }*/
+        assertThat(response.getEntity()).isEqualTo(book);
+
+    }
 }

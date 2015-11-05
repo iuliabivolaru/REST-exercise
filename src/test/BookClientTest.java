@@ -1,4 +1,4 @@
-import BookModel.Book;
+import bookModel.Book;
 import Client.BookClient;
 import org.junit.Test;
 //it has to be manually added

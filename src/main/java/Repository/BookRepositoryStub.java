@@ -1,8 +1,8 @@
 package Repository;
 
-import BookModel.Book;
-import BookModel.Category;
-import BookModel.ReviewBook;
+import bookModel.Book;
+import bookModel.Category;
+import bookModel.Review;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -35,12 +35,12 @@ public class BookRepositoryStub implements BookRepository {
         return books.subList(start, end);
     }
 
-    public List<ReviewBook> findAllReviews(){
+    public List<Review> findAllReviews(){
 
-        List<ReviewBook> reviews = new ArrayList<>();
+        List<Review> reviews = new ArrayList<>();
 
-        ReviewBook review1 = new ReviewBook(5, "iuliab", "Software Architecture for Developers", "Technical leadership by coaching, coding", "20/05/2015", 1);
-        ReviewBook review2 = new ReviewBook(6, "geog", "Refactoring", "Improving the design of existing code", "25/07/2015", 2);
+        Review review1 = new Review(5, "iuliab", "Software Architecture for Developers", "Technical leadership by coaching, coding", "20/05/2015", 1);
+        Review review2 = new Review(6, "geog", "Refactoring", "Improving the design of existing code", "25/07/2015", 2);
 
         reviews.add(review1);
         reviews.add(review2);
@@ -65,12 +65,7 @@ public class BookRepositoryStub implements BookRepository {
 
     @Override
     public Book update(Book book, String bookId) {
-        //search the DB to see if we gave already a book with that id
-        //select * from books where id = ?
-        //if rs size == 0
-        //insert into Book table
-        //else
-        //update the book
+
         Book b = findBook(bookId);
         if(b == null)
             return null;
@@ -83,7 +78,7 @@ public class BookRepositoryStub implements BookRepository {
 
     @Override
     public boolean delete(String bookId) {
-        //delete from book where bookId = ?
+
         return books.removeIf(b -> b.getId() == Integer.parseInt(bookId));
 
     }

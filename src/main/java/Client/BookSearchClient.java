@@ -3,7 +3,7 @@ package Client;
 /**
  * Created by iuliab on 27.10.2015.
  */
-import BookModel.Book;
+import bookModel.Book;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;

@@ -1,0 +1,22 @@
+<!--
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence_2_1.xsd"
+                 version="2.0">
+    <persistence-unit name="persistenceUnit" transaction-type="RESOURCE_LOCAL">
+        &lt;!&ndash;
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+&ndash;&gt;<class>bookModel.Book
+    </class>
+        <properties>
+            <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+            <property name="javax.persistence.schema-generation.scripts.action" value="drop-and-create"/>
+            <property name="javax.persistence.schema-generation.scripts.create-target" value="module01-create.ddl"/>
+            <property name="javax.persistence.schema-generation.scripts.drop-target" value="module01-drop.ddl"/>
+            <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/module01-db;create=true"/>
+            <property name="javax.persistence.jdbc.user" value="app"/>
+            <property name="javax.persistence.jdbc.password" value="app"/>
+            <property name="eclipselink.logging.level" value="INFO"/>
+        </properties></persistence-unit></persistence>-->
+
