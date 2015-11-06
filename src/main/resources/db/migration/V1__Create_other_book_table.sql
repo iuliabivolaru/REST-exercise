@@ -1,4 +1,4 @@
-CREATE TABLE iulia.BOOKS5 (
+CREATE TABLE iulia.BOOKS (
   id_book NUMBER(5) NOT NULL,
   title VARCHAR(100) NOT NULL,
   authors VARCHAR(100) NOT NULL,

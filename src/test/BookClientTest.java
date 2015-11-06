@@ -1,5 +1,5 @@
 import bookModel.Book;
-import Client.BookClient;
+import client.BookClient;
 import org.junit.Test;
 //it has to be manually added
 import java.util.List;

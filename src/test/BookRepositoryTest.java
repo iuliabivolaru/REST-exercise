@@ -1,7 +1,7 @@
 import bookModel.Book;
 import bookModel.Category;
-import Repository.BookRepository;
-import Repository.BookRepositoryStub;
+import repository.BookRepository;
+import repository.BookRepositoryStub;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -27,9 +27,11 @@ public class BookRepositoryTest {
         bookRepository = new BookRepositoryStub();
 
         books = new ArrayList<Book>();
-        book1 = new Book(1, "Software Architecture for Developers", "Simon Brown", Category.SCIENCE, "20/05/2013", 200, "978-1-4028-9462-6", "Technical leadership by coaching, coding", "refactoringBook.jpg", 230, "English", 4);
-        book2 = new Book(2, "Refactoring", "Martin Fowler", Category.SCIENCE, "25/03/2010", 250, "978-1-4057-9462-6", "Improving the design of existing code", "softwareArchitectureForDevs.jpg", 280, "English", 4.5f);
-        book3 = new Book(3, "Flow", "Martin Fowler", Category.SCIENCE, "25/03/2010", 250, "978-1-4057-9468-6", "Improving the design of existing code", "softwareArchitectureForDevs.jpg", 280, "English", 4.5f);
+        List<Category> categories = new ArrayList<Category>();
+        categories.add(Category.SCIENCE);
+        book1 = new Book("Software Architecture for Developers", "Simon Brown", categories, "20/05/2013", 200f, "978-1-4028-9462-6", "Technical leadership by coaching, coding", "refactoringBook.jpg", 230, "English", 4);
+        book2 = new Book("Refactoring", "Martin Fowler", categories, "25/03/2010", 250f, "978-1-4057-9462-6", "Improving the design of existing code", "softwareArchitectureForDevs.jpg", 280, "English", 4.5f);
+        book3 = new Book("Flow", "Martin Fowler", categories, "25/03/2010", 250f, "978-1-4057-9468-6", "Improving the design of existing code", "softwareArchitectureForDevs.jpg", 280, "English", 4.5f);
         books.add(book1);
         books.add(book2);
         books.add(book3);

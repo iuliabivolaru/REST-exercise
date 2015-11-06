@@ -1,0 +1,4 @@
+CREATE SEQUENCE iulia.books5_sequence
+ START WITH 1
+ INCREMENT BY 1
+ NOCYCLE;

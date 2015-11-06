@@ -1,0 +1,2 @@
+ALTER TABLE iulia.BOOKS5
+DROP COLUMN category;

@@ -3,6 +3,7 @@ package bookModel;
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.List;
 //import javax.persistence.Entity;
 //import javax.persistence.Id;
 
@@ -16,42 +17,47 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Book {
     @Id
     @Column(name = "id_book")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer id;
 
     private String title;
 
     private String authors;
 
-    private Category category;
-    //!!!
-    @Column(name = "publication_date")
+    @Transient
+    @OneToMany(fetch = FetchType.EAGER)
+    @JoinColumn(name = "id_book")
+    private List<Category> categories;
 
+    @Column(name = "publication_date")
     private String date;
+
     @Column(name = "price")
-    private Double price;
+    private Float price;
 
     private String ISBN;
 
     private String description;
 
     private String cover;
+
     @Column(name = "number_of_pages")
     private Integer numberOfPages;
-    //@Transient
+
     @Column(name = "language_of_book")
     private String language;
-    //@Transient
+
     private Float stars;
 
     public Book() {
 
     }
 
-    public Book(Integer id, String title, String authors, Category category, String date, double price, String ISBN, String description, String cover, int numberOfPages, String language, float stars) {
+    public Book(Integer id, String title, String authors, List<Category> categories, String date, Float price, String ISBN, String description, String cover, int numberOfPages, String language, float stars) {
         this.id = id;
         this.title = title;
         this.authors = authors;
-        this.category = category;
+        this.categories = categories;
         this.date = date;
         this.price = price;
         this.ISBN = ISBN;
@@ -94,11 +100,11 @@ public class Book {
         this.date = date;
     }
 
-    public double getPrice() {
+    public Float getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(Float price) {
         this.price = price;
     }
 

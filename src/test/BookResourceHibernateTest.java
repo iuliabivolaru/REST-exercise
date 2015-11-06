@@ -1,6 +1,5 @@
-import BookResource.BookResource;
-import Repository.BookRepository;
-import Service.BookService;
+import bookResource.BookResource;
+import service.BookService;
 import bookModel.Book;
 import org.junit.Before;
 import org.junit.Test;
@@ -39,6 +38,8 @@ public class BookResourceHibernateTest {
 
         assertThat(book1.getEntity()).isEqualTo(book);
     }
+
+
 
 
 }
