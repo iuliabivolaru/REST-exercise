@@ -28,10 +28,10 @@
                 <version>3.2.1</version>
                 <configuration>
                     <url>jdbc:oracle:thin:@//localhost:1521/xe</url>
-                    <user>SYSTEM</user>
+                    <user>system</user>
                     <password>Helpdesk01</password>
                     <schemas>
-                        <schema>iulia</schema>
+                        <schema>IULIA</schema>
                     </schemas>
                 </configuration>
                 <dependencies>

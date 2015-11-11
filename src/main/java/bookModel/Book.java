@@ -13,11 +13,12 @@ import java.util.List;
         @NamedQuery(name = "ExpensiveBooks", query = "SELECT b FROM Book b WHERE b.price > :price"),
         @NamedQuery(name = "ManyPagesBooks", query = "SELECT b FROM Book b WHERE b.numberOfPages > ?1")
 })
-@Table(name="BOOKS5")
+@Table(name="BOOKS")
 public class Book {
     @Id
     @Column(name = "id_book")
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_GEN")
+    @SequenceGenerator(name = "SEQ_GEN",sequenceName = "books_seq",allocationSize = 1)
     private Integer id;
 
     private String title;
@@ -25,8 +26,10 @@ public class Book {
     private String authors;
 
     @Transient
-    @OneToMany(fetch = FetchType.EAGER)
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "id_book")
+    @Enumerated(EnumType.STRING)
+
     private List<Category> categories;
 
     @Column(name = "publication_date")
@@ -53,8 +56,7 @@ public class Book {
 
     }
 
-    public Book(Integer id, String title, String authors, List<Category> categories, String date, Float price, String ISBN, String description, String cover, int numberOfPages, String language, float stars) {
-        this.id = id;
+    public Book(String title, String authors, List<Category> categories, String date, Float price, String ISBN, String description, String cover, int numberOfPages, String language, float stars) {
         this.title = title;
         this.authors = authors;
         this.categories = categories;
@@ -118,6 +120,14 @@ public class Book {
     @XmlElement(name="desc")
     public String getDescription() {
         return description;
+    }
+
+    public List<Category> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(List<Category> categories) {
+        this.categories = categories;
     }
 
     public void setDescription(String description) {

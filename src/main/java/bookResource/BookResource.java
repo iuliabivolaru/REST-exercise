@@ -70,8 +70,11 @@ public class BookResource {
     @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
     public Response createBook(Book book, @Context UriInfo uriInfo){
 
-        if(receivedTitleAndIdParametersAreValid(book.getTitle(), String.valueOf(book.getId())))
-            bookService.create(book);
+        if(receivedTitleAndIdParametersAreValid(book.getTitle(), String.valueOf(book.getId()))) {
+            //bookService.create(book);
+            bookService.createBook(book);
+        }
+
         else{
 
             ErrorBean errorBean = new ErrorBean();

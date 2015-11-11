@@ -1,8 +1,7 @@
-CREATE TABLE iulia.BOOKS (
+CREATE TABLE BOOKS (
   id_book NUMBER(5) NOT NULL,
   title VARCHAR(100) NOT NULL,
   authors VARCHAR(100) NOT NULL,
-  category VARCHAR(100),
   publication_date VARCHAR(20),
   price NUMBER(7,2),
   ISBN VARCHAR(100),
@@ -13,4 +12,4 @@ CREATE TABLE iulia.BOOKS (
   stars NUMBER(7,2),
   PRIMARY KEY(id_book)
 );
-
+CREATE SEQUENCE books_seq START WITH 3 INCREMENT BY 1 NOCACHE;

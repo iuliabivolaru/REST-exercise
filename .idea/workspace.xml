@@ -2,56 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c792f588-69df-4c3f-9784-e30cbdb07d5a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bookModel/Author.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V3__Create_index_book.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V4__Alter_book_drop_category.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V5__Create_category_table.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V6__Create_sequence_books.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V7__Alter_category_change_PK.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V8__Create_sequence_books_specific_schema.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V9__Create_sequence_correct_name.sql" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/BookResource/BookResource$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/BookResource/BookResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/BookResource/MyResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Client/BookClient$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Client/BookClient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Client/BookSearchClient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Repository/BookRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Repository/BookRepositoryStub.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-service-webapp/WEB-INF/classes/BookResource/BookResource$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-service-webapp/WEB-INF/classes/BookResource/BookResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-service-webapp/WEB-INF/classes/BookResource/MyResource.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-service-webapp/WEB-INF/classes/Client/BookClient$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-service-webapp/WEB-INF/classes/Client/BookClient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-service-webapp/WEB-INF/classes/Client/BookSearchClient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-service-webapp/WEB-INF/classes/Repository/BookRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-service-webapp/WEB-INF/classes/Repository/BookRepositoryStub.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/BookResource/BookResource.java" afterPath="$PROJECT_DIR$/src/main/java/bookResource/BookResource.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/BookResource/ErrorBean.java" afterPath="$PROJECT_DIR$/src/main/java/bookResource/ErrorBean.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/BookResource/MyResource.java" afterPath="$PROJECT_DIR$/src/main/java/bookResource/MyResource.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Client/BookClient.java" afterPath="$PROJECT_DIR$/src/main/java/client/BookClient.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Client/BookSearchClient.java" afterPath="$PROJECT_DIR$/src/main/java/client/BookSearchClient.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Repository/BookRepository.java" afterPath="$PROJECT_DIR$/src/main/java/repository/BookRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Repository/BookRepositoryHibernate.java" afterPath="$PROJECT_DIR$/src/main/java/repository/BookRepositoryHibernate.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Repository/BookRepositoryStub.java" afterPath="$PROJECT_DIR$/src/main/java/repository/BookRepositoryStub.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Service/BookService.java" afterPath="$PROJECT_DIR$/src/main/java/service/BookService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Service/ReviewService.java" afterPath="$PROJECT_DIR$/src/main/java/service/ReviewService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Spring/AppConfig.java" afterPath="$PROJECT_DIR$/src/main/java/spring/AppConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2__Insert_books.sql" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V11__Insert_books.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V12__Create_sequence_categories.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V13__Insert_categories.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/lib/bootstrap.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V3__Create_index_book.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V4__Alter_book_drop_category.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V6__Create_sequence_books.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V7__Alter_category_change_PK.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V8__Create_sequence_books_specific_schema.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V9__Create_sequence_correct_name.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-service-webapp/WEB-INF/classes/BookModel/Book.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-service-webapp/WEB-INF/classes/BookModel/Category.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/simple-service-webapp/WEB-INF/classes/BookModel/ReviewBook.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/simple-service-webapp.war" afterPath="$PROJECT_DIR$/target/simple-service-webapp.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/spring/AppConfig.java" afterPath="$PROJECT_DIR$/src/main/java/spring/AppConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bookModel/Book.java" afterPath="$PROJECT_DIR$/src/main/java/bookModel/Book.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/BookClientTest.java" afterPath="$PROJECT_DIR$/src/test/BookClientTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/repository/BookRepositoryHibernate.java" afterPath="$PROJECT_DIR$/src/main/java/repository/BookRepositoryHibernate.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/BookRepositoryHibernateTest.java" afterPath="$PROJECT_DIR$/src/test/BookRepositoryHibernateTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/BookRepositoryTest.java" afterPath="$PROJECT_DIR$/src/test/BookRepositoryTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/BookResourceHibernateTest.java" afterPath="$PROJECT_DIR$/src/test/BookResourceHibernateTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/BookResourceTest.java" afterPath="$PROJECT_DIR$/src/test/BookResourceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bookResource/BookResource.java" afterPath="$PROJECT_DIR$/src/main/java/bookResource/BookResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V11__Insert_books.sql" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V11__Insert_books.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__Create_other_book_table.sql" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__Create_other_book_table.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V5__Create_category_table.sql" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V5__Create_category_table.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple-service-webapp.iml" afterPath="$PROJECT_DIR$/simple-service-webapp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/simple_service_webapp_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/simple_service_webapp_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/simple-service-webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/simple-service-webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="simple-service-webapp.iws" />
@@ -108,7 +80,25 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="BOOKS5" />
+        <option name="myItemId" value="CATEGORY" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="Oracle - xe@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="IULIA" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="BOOKS" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -119,39 +109,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="V9__Create_sequence_correct_name.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V9__Create_sequence_correct_name.sql">
+      <file leaf-file-name="BookRepositoryHibernate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/repository/BookRepositoryHibernate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="162">
-              <caret line="0" column="37" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1135" max-vertical-offset="2268">
+              <caret line="113" column="25" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bookModel/Book.java">
+      <file leaf-file-name="bootstrap.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/lib/bootstrap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2970">
-              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+            <state vertical-scroll-proportion="-0.5299891" vertical-offset="486" max-vertical-offset="42570">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="refactoringBook.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/refactoringBook.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="V1__Create_other_book_table.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__Create_other_book_table.sql">
+      <file leaf-file-name="BookService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/BookService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23414634" vertical-offset="0" max-vertical-offset="615">
-              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1746">
+              <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,45 +144,67 @@
       <file leaf-file-name="V11__Insert_books.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V11__Insert_books.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.44" vertical-offset="0" max-vertical-offset="270">
-              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-              <folding>
-                <marker date="1446799529597" expanded="true" signature="0:306" placeholder="INSERT INTO ..." />
-                <marker date="1446799529597" expanded="true" signature="309:627" placeholder="INSERT INTO ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="V3__Create_index_book.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V3__Create_index_book.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.16" vertical-offset="0" max-vertical-offset="162">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding>
-                <marker date="1446728317073" expanded="true" signature="0:58" placeholder="/* CREATE IN..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="V6__Create_sequence_books.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V6__Create_sequence_books.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="162">
-              <caret line="0" column="24" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="270">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="V5__Create_category_table.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V5__Create_category_table.sql">
+      <file leaf-file-name="V12__Create_sequence_categories.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V12__Create_sequence_categories.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.76" vertical-offset="0" max-vertical-offset="324">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+              <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookResource.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bookResource/BookResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="3222">
+              <caret line="83" column="57" selection-start-line="83" selection-start-column="57" selection-end-line="83" selection-end-column="57" />
               <folding>
-                <marker date="1446727922822" expanded="true" signature="0:202" placeholder="CREATE TABLE..CATEGORY..." />
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="V13__Insert_categories.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V13__Insert_categories.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="144">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/spring/AppConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="972" max-vertical-offset="1116">
+              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookResourceHibernateTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/BookResourceHibernateTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="134" max-vertical-offset="756">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -206,9 +213,12 @@
       <file leaf-file-name="BookRepositoryHibernateTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/BookRepositoryHibernateTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="506" max-vertical-offset="1818">
-              <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="1782">
+              <caret line="97" column="69" selection-start-line="97" selection-start-column="69" selection-end-line="97" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1029#1039#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -228,8 +238,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/example/Category.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/BookRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/BookResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/Client/BookClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/Client/BookSearchClient.java" />
@@ -250,33 +258,37 @@
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/BookResource/BookResource.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Service/BookService.java" />
         <option value="$PROJECT_DIR$/src/main/java/Repository/BookRepositoryHibernate.java" />
         <option value="$PROJECT_DIR$/src/main/java/Spring/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/spring/AppConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V4__Alter_book_drop_category.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V5__Create_category_table.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V3__Create_index_book.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V6__Create_sequence_books.sql" />
-        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V7__Alter_category_change_PK.sql" />
         <option value="$PROJECT_DIR$/src/main/java/bookModel/Author.java" />
         <option value="$PROJECT_DIR$/src/test/BookResourceTest.java" />
         <option value="$PROJECT_DIR$/src/test/BookResourceHibernateTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/repository/BookRepositoryHibernate.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/BookService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bookResource/BookResource.java" />
-        <option value="$PROJECT_DIR$/src/test/BookRepositoryHibernateTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/repository/BookRepositoryStub.java" />
         <option value="$PROJECT_DIR$/src/test/BookRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V8__Create_sequence_books_specific_schema.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V10__Create_trigger_for_sequence.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/bookModel/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V9__Create_sequence_correct_name.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V2__Insert_books.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V9__Create_sequence_correct_name.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V4__Alter_book_drop_category.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V7__Alter_category_change_PK.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V11__Insert_books.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V5__Create_category_table.sql" />
+        <option value="db-console:/b9a062f8/f0fe6ec5-52ab-4526-a1bf-acd823d8f179/" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V1__Create_other_book_table.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V12__Create_sequence_categories.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V13__Insert_categories.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/bookModel/Book.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bookResource/BookResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/spring/AppConfig.java" />
+        <option value="$PROJECT_DIR$/src/test/BookRepositoryHibernateTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repository/BookRepositoryHibernate.java" />
       </list>
     </option>
   </component>
@@ -350,6 +362,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -410,6 +423,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple-service-webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple-service-webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -623,7 +662,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -663,6 +701,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/lib" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/com/example" />
     </key>
@@ -676,38 +715,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookRepositoryHibernateTest.givenANewBook_createBook_createsTheBook">
-    <configuration default="false" name="BookResourceHibernateTest.givenBookId_GetById_returnTheCorrectBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="simple-service-webapp" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BookResourceHibernateTest" />
-      <option name="METHOD_NAME" value="givenBookId_GetById_returnTheCorrectBook" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Cover" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Cover" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Tomcat Server.BookExercise">
     <configuration default="false" name="BookRepositoryHibernateTest.givenANewBook_createBook_createsTheBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="simple-service-webapp" />
@@ -760,14 +768,14 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="BookResourceTest.givenBookId_GetById_returnTheCorrectBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="BookRepositoryTest.givenABookId_findBookById_returnCorrectBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="simple-service-webapp" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BookResourceTest" />
-      <option name="METHOD_NAME" value="givenBookId_GetById_returnTheCorrectBook" />
+      <option name="MAIN_CLASS_NAME" value="BookRepositoryTest" />
+      <option name="METHOD_NAME" value="givenABookId_findBookById_returnCorrectBook" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -783,14 +791,37 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="BookRepositoryTest.givenABookId_findBookById_returnCorrectBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="BookRepositoryHibernateTest.givenANewBook_updateBook_updateTheBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="simple-service-webapp" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BookRepositoryTest" />
-      <option name="METHOD_NAME" value="givenABookId_findBookById_returnCorrectBook" />
+      <option name="MAIN_CLASS_NAME" value="BookRepositoryHibernateTest" />
+      <option name="METHOD_NAME" value="givenANewBook_updateBook_updateTheBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BookRepositoryHibernateTest.givenABook_findCategories_retrieveCategories" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="simple-service-webapp" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BookRepositoryHibernateTest" />
+      <option name="METHOD_NAME" value="givenABook_findCategories_retrieveCategories" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1175,19 +1206,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.BookExercise" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.BookRepositoryHibernateTest.givenABookId_findBookById_returnCorrectBook" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BookResourceHibernateTest.givenBookId_GetById_returnTheCorrectBook" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BookRepositoryHibernateTest.givenANewBook_createBook_createsTheBook" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BookRepositoryHibernateTest.givenABook_deleteBook_bookDeleted" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.BookResourceTest.givenBookId_GetById_returnTheCorrectBook" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.BookRepositoryTest.givenABookId_findBookById_returnCorrectBook" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BookRepositoryHibernateTest.givenANewBook_createBook_createsTheBook" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BookRepositoryHibernateTest.givenABook_deleteBook_bookDeleted" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BookRepositoryTest.givenABookId_findBookById_returnCorrectBook" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.BookRepositoryHibernateTest.givenANewBook_updateBook_updateTheBook" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.BookRepositoryHibernateTest.givenABook_findCategories_retrieveCategories" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BookRepositoryHibernateTest.givenANewBook_createBook_createsTheBook" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BookRepositoryTest.givenABookId_findBookById_returnCorrectBook" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BookRepositoryHibernateTest.givenABook_findCategories_retrieveCategories" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BookRepositoryHibernateTest.givenANewBook_updateBook_updateTheBook" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.BookRepositoryHibernateTest.givenABook_deleteBook_bookDeleted" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BookResourceHibernateTest.givenBookId_GetById_returnTheCorrectBook" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BookResourceTest.givenBookId_GetById_returnTheCorrectBook" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BookRepositoryHibernateTest.givenANewBook_createBook_createsTheBook" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BookRepositoryTest.givenABookId_findBookById_returnCorrectBook" />
       </list>
     </recent_temporary>
   </component>
@@ -1220,47 +1251,50 @@
       <workItem from="1446725837468" duration="395000" />
       <workItem from="1446727178363" duration="5791000" />
       <workItem from="1446733881252" duration="10039000" />
+      <workItem from="1446801516674" duration="16965000" />
+      <workItem from="1447084984429" duration="1617000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164755000" />
+    <option name="totallyTimeSpent" value="183337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41354167" sideWeight="0.26865673" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55239064" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23935877" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498618" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.396875" sideWeight="0.4997236" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32708332" sideWeight="0.4997236" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960325" sideWeight="0.49811321" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32083333" sideWeight="0.73134327" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328125" sideWeight="0.4997236" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31770834" sideWeight="0.4997236" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25538972" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23548922" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23548922" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23825318" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498618" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.396875" sideWeight="0.4997236" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32708332" sideWeight="0.4997236" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32083333" sideWeight="0.73134327" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23825318" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.49972752" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1283,33 +1317,9 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/bookResource/BookResource.java</url>
-          <line>124</line>
-          <properties class="bookResource.BookResource" method="getCoverImageOfBook" />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/BookRepositoryTest.java</url>
-          <line>48</line>
-          <properties class="BookRepositoryTest" method="givenANewBook_createBook_createsTheBook" />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/BookClientTest.java</url>
-          <line>18</line>
-          <properties class="BookClientTest" method="testPut" />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/BookRepositoryHibernateTest.java</url>
-          <line>66</line>
-          <properties class="BookRepositoryHibernateTest" method="givenABook_deleteBook_bookDeleted" />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bookResource/BookResource.java</url>
-          <line>98</line>
+          <line>101</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
@@ -1325,8 +1335,17 @@
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/BookRepositoryHibernateTest.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="30" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="33" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1335,13 +1354,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.0/javax.ws.rs-api-2.0.jar!/javax/ws/rs/GET.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29469547" vertical-offset="0" max-vertical-offset="0">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-common/2.7/jersey-common-2.7.jar!/org/glassfish/jersey/uri/internal/JerseyUriBuilder.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3529412" vertical-offset="0" max-vertical-offset="0">
@@ -1360,13 +1372,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.413793" vertical-offset="0" max-vertical-offset="0">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.11.jar!/org/junit/runner/JUnitCore.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4915254" vertical-offset="0" max-vertical-offset="0">
-          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1437,7 +1442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1448,32 +1452,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34416825" vertical-offset="0" max-vertical-offset="523">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.11.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44509804" vertical-offset="1699" max-vertical-offset="4104">
-          <caret line="147" column="25" selection-start-line="147" selection-start-column="25" selection-end-line="147" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simple-service-webapp.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="2304">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2592">
-          <caret line="99" column="8" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1491,25 +1473,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="666">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/repository/BookRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
           <caret line="32" column="61" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://db-console:/b9a062f8/f0fe6ec5-52ab-4526-a1bf-acd823d8f179/">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="533">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1528,84 +1495,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V7__Alter_category_change_PK.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1220339" vertical-offset="0" max-vertical-offset="590">
-          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bookModel/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14634146" vertical-offset="0" max-vertical-offset="615">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bookModel/Author.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/BookService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1034" max-vertical-offset="1746">
-          <caret line="94" column="15" selection-start-line="94" selection-start-column="15" selection-end-line="94" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/BookResourceHibernateTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="918">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/BookRepositoryHibernate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="283" max-vertical-offset="2412">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/BookRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="447" max-vertical-offset="1692">
           <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/b9a062f8/f0fe6ec5-52ab-4526-a1bf-acd823d8f179/.IULIA.BOOKS5">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bookResource/BookResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="3168">
-          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1617,11 +1513,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spring/AppConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/refactoringBook.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/b9a062f8/f0fe6ec5-52ab-4526-a1bf-acd823d8f179/.IULIA.BOOKS5">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://db-console:/b9a062f8/f0fe6ec5-52ab-4526-a1bf-acd823d8f179/">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1368">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1629,98 +1541,213 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="123" max-vertical-offset="1692">
           <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="666">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V8__Create_sequence_books_specific_schema.sql">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="162">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="134" max-vertical-offset="2592">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V4__Alter_book_drop_category.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/java/bookModel/Author.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="126">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V5__Create_category_table.sql">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.11.jar!/org/junit/runner/JUnitCore.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.76" vertical-offset="0" max-vertical-offset="324">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding>
-            <marker date="1446727922822" expanded="true" signature="0:202" placeholder="CREATE TABLE..CATEGORY..." />
-          </folding>
+        <state vertical-scroll-proportion="0.2461832" vertical-offset="1347" max-vertical-offset="2088">
+          <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/BookRepositoryHibernateTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.2.2.RELEASE/spring-test-4.2.2.RELEASE.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="506" max-vertical-offset="1818">
-          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-          <folding />
+        <state vertical-scroll-proportion="0.33268103" vertical-offset="748" max-vertical-offset="3510">
+          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/refactoringBook.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.2.2.RELEASE/spring-test-4.2.2.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestClassCallbacks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34923664" vertical-offset="87" max-vertical-offset="810">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.2.2.RELEASE/spring-test-4.2.2.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunBeforeTestClassCallbacks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5152672" vertical-offset="0" max-vertical-offset="524">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.11.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33268103" vertical-offset="2332" max-vertical-offset="4104">
+          <caret line="179" column="16" selection-start-line="179" selection-start-column="16" selection-end-line="179" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.2.2.RELEASE/spring-test-4.2.2.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3483366" vertical-offset="164" max-vertical-offset="918">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34351146" vertical-offset="0" max-vertical-offset="524">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bookModel/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/b9a062f8/f0fe6ec5-52ab-4526-a1bf-acd823d8f179/.IULIA.BOOKS">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bookModel/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2970">
-          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V3__Create_index_book.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.16" vertical-offset="0" max-vertical-offset="162">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <marker date="1446728317073" expanded="true" signature="0:58" placeholder="/* CREATE IN..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V6__Create_sequence_books.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="162">
-          <caret line="0" column="24" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V11__Insert_books.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.44" vertical-offset="0" max-vertical-offset="270">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-          <folding>
-            <marker date="1446799529597" expanded="true" signature="0:306" placeholder="INSERT INTO ..." />
-            <marker date="1446799529597" expanded="true" signature="309:627" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V9__Create_sequence_correct_name.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="162">
-          <caret line="0" column="37" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="3096">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__Create_other_book_table.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23414634" vertical-offset="0" max-vertical-offset="615">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V5__Create_category_table.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V11__Insert_books.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V12__Create_sequence_categories.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+          <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V13__Insert_categories.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="144">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/BookRepositoryHibernateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1065" max-vertical-offset="1782">
+          <caret line="97" column="69" selection-start-line="97" selection-start-column="69" selection-end-line="97" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1029#1039#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/BookResourceHibernateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="918">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bookResource/BookResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="3222">
+          <caret line="83" column="57" selection-start-line="83" selection-start-column="57" selection-end-line="83" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1746">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spring/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1116">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/BookRepositoryHibernate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1135" max-vertical-offset="2268">
+          <caret line="113" column="25" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/lib/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5299891" vertical-offset="486" max-vertical-offset="42570">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

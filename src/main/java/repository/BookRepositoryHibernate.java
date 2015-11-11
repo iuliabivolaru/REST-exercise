@@ -26,9 +26,8 @@ public class BookRepositoryHibernate {
     }
 
     public Book createBook(Book book){
-        //tx.begin();
+
         em.persist(book);
-        //tx.commit();
         return book;
     }
 
@@ -42,24 +41,20 @@ public class BookRepositoryHibernate {
 
     public boolean removeBook(Integer id){
 
-        //tx.begin();
         Book book = em.find(Book.class, id);
         if(book != null) {
             em.remove(book);
             return true;
         }
         return false;
-        //tx.commit();
     }
 
     public Book updateBookPrice(Book newBook, Float percentRaise){
 
-        //tx.begin();
         Book book = em.find(Book.class, newBook.getId());
         if(book != null){
             book.setPrice(book.getPrice() * (1 + percentRaise));
         }
-        //tx.commit();
 
         return book;
     }
@@ -111,16 +106,18 @@ public class BookRepositoryHibernate {
 
         return queryBooksManyPages.getResultList();
     }
-    //!!!
-    public List<Category> findCategoriesForGivenBookId(Integer id) {
+
+    public List<Category> findCategoriesForGivenBookId(Integer bookID) {
 
         System.out.println("Entered book category found ");
-        //TypedQuery<Category> categoriesFound = ("SELECT c FROM Category c WHERE ")
-        return null;
+        Book book = em.find(Book.class, bookID);
+        List<Category> retrievedList = book.getCategories();
+
+        return retrievedList;
     }
 
 
-
+//TODO prepared statement! for filter... in GET
 
 
 

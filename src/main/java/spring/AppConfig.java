@@ -44,8 +44,8 @@ public class AppConfig {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("oracle.jdbc.driver.OracleDriver");
         dataSource.setUrl("jdbc:oracle:thin:@//localhost:1521/xe");
-        dataSource.setUsername( "iulia" );
-        dataSource.setPassword( "Helpdesk01" );
+        dataSource.setUsername( "IULIA" );
+        dataSource.setPassword( "iulia" );
         return dataSource;
     }
 
@@ -68,19 +68,5 @@ public class AppConfig {
         return properties;
     }
 
-//    @Bean(name = "bookService")
-//    public BookService getBookService(){
-//        //constructor injection
-//        return new BookService(getBookRepository());
-//        //setter injection
-//        //BookService bookService = new BookService();
-//        //bookService.setBookRepository(getBookRepository());
-//        //return bookService;
-//    }
-//
-//    @Bean(name = "bookRepository")
-//    public BookRepository getBookRepository(){
-//        return new BookRepositoryStub();
-//    }
 
 }
