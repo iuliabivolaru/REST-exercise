@@ -1,0 +1,87 @@
+<!doctype html>
+<html ng-app="booksApp">
+<head>
+    <link rel="stylesheet" href="lib/bootstrap.css">
+    <link rel="stylesheet" href="lib/app.css">
+</head>
+
+{{67/45}}
+<body ng-controller="BookController">
+<div class="container">
+    <div style="padding-left:20px; padding-right:20px">
+        <!--<form name="searchUser">
+            <input type="search" required placeholder="Book to find" ng-model="bookId"/>
+            <input type="submit" value="search" ng-click="search(bookId)"/>
+
+        </form>-->
+
+        <!--<div class="row">
+            <div class="span11">
+                <h2>{{book.title | uppercase}} </h2>
+            </div>
+        </div>-->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2>{{book.title | uppercase}} </h2>
+            </div>
+            <div class="panel-body">
+                <p>...</p>
+            </div>
+
+            <!-- Table -->
+            <table class="table">
+                <tr>
+                    <td><strong>ISBN</strong></td>
+                    <td>{{book.ISBN}}</td>
+                </tr>
+                <tr>
+                    <td><strong>Authors</strong></td>
+                    <td>{{book.authors}}</td>
+                </tr>
+                <tr>
+                    <td><strong>Date</strong></td>
+                    <td>{{book.date}}</td>
+                </tr>
+                <tr>
+                    <td><strong>Language</strong></td>
+                    <td>{{book.language}}</td>
+                </tr>
+                <tr>
+                    <td><strong>Number of pages</strong></td>
+                    <td>{{book.numberOfPages}}</td>
+                </tr>
+                <tr>
+                    <td><strong>Price</strong></td>
+                    <td>{{book.price}}</td>
+                </tr>
+                <tr>
+                    <td><strong>Stars</strong></td>
+                    <td>{{book.stars}}</td>
+                </tr>
+            </table>
+        </div>
+        <!--<div class="row">
+            <div class="span3">
+                <div><strong>ISBN:</strong> {{book.ISBN}}</div>
+                <div><strong>Authors:</strong> {{book.authors}}</div>
+                <div><strong>Date:</strong> {{book.date}}</div>
+                <div><strong>Description:</strong> {{book.desc}} </div>
+                <div><strong>Language:</strong> {{book.language}} </div>
+                <div><strong>Number of pages:</strong> {{book.numberOfPages}} </div>
+                <div><strong>Price:</strong> {{book.price}} </div>
+                <div><strong>Stars:</strong> {{book.stars}} </div>
+            </div>
+
+        </div>-->
+
+        <hr>
+    </div>
+</div>
+
+<script src="lib/jquery-2.1.4.js"></script>
+<script src="lib/bootstrap.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="js/controllers/BookController.js"></script>
+<script src="lib/app.css"></script>
+</body>
+</html>
