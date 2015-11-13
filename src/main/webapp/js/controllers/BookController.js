@@ -1,6 +1,6 @@
     'use strict';
     angular.module('booksApp').controller('BookController',
-        function BookController($scope, bookData){
+        function BookController($scope, bookDetailsService, $routeParams){
         /*var onBookComplete = function(response){
          $scope.book = response.data;
          $http.get($scope.book)
@@ -22,10 +22,15 @@
 
             console.log("TEst");
 
-           bookData.getBookDetails().then(function(data){
+
+            $scope.bookId = $routeParams.bookId;
+
+            bookDetailsService.getBookDetails($routeParams.bookId).then(function(data){
                 console.log(data);
                 $scope.book = data;
             });
+
+
 
        /* var onBookComplete = function(response) {
             console.log(response.data);
