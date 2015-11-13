@@ -91,7 +91,6 @@ public class BookResource {
     public Response getAllBooks(){
         System.out.println("sss");
         List<Book> books = bookService.findAllBooks();
-        //return bookRepository.findAllBooks();
         if(books == null){
             return Response.status(Response.Status.NOT_FOUND).build();
         }
@@ -100,7 +99,7 @@ public class BookResource {
     }
 
     @GET
-    @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
+    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     @Path("{bookId}")// http:/localhost:8080/books/1
     //grab the id from the params and use it
     public Response getBook(@PathParam("bookId") String bookId){

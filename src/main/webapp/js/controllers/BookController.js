@@ -1,6 +1,6 @@
-(function() {
-    var app = angular.module("booksApp", []);
-    var BookController = function($scope, $http){
+    'use strict';
+    angular.module('booksApp').controller('BookController',
+        function BookController($scope, $http){
         /*var onBookComplete = function(response){
          $scope.book = response.data;
          $http.get($scope.book)
@@ -16,9 +16,15 @@
          .then(onBookComplete);
          };
 
+
+
          $scope.bookId = 1;*/
 
+            console.log("TEst");
+
+
         var onBookComplete = function(response) {
+            console.log(response.data);
             $scope.book = response.data;
         };
 
@@ -30,12 +36,7 @@
         $http.get("http://localhost:8080/rest/books/1")
             .then(onBookComplete, onError);
 
+    });
 
-        //$scope.message = "Hello, Angular!";
 
 
-    }
-
-    app.controller("BookController", BookController);
-
-}());

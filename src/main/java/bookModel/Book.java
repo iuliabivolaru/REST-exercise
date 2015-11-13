@@ -18,7 +18,7 @@ public class Book {
     @Id
     @Column(name = "id_book")
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_GEN")
-    @SequenceGenerator(name = "SEQ_GEN",sequenceName = "books_seq",allocationSize = 1)
+    @SequenceGenerator(name = "SEQ_GEN",sequenceName = "books_seq", allocationSize = 1)
     private Integer id;
 
     private String title;
@@ -70,11 +70,11 @@ public class Book {
         this.stars = stars;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -122,6 +122,7 @@ public class Book {
         return description;
     }
 
+    @XmlElement(name="categories")
     public List<Category> getCategories() {
         return categories;
     }
@@ -142,11 +143,11 @@ public class Book {
         this.cover = cover;
     }
 
-    public int getNumberOfPages() {
+    public Integer getNumberOfPages() {
         return numberOfPages;
     }
 
-    public void setNumberOfPages(int numberOfPages) {
+    public void setNumberOfPages(Integer numberOfPages) {
         this.numberOfPages = numberOfPages;
     }
 
@@ -158,11 +159,11 @@ public class Book {
         this.language = language;
     }
 
-    public float getStars() {
+    public Float getStars() {
         return stars;
     }
 
-    public void setStars(float stars) {
+    public void setStars(Float stars) {
         this.stars = stars;
     }
 

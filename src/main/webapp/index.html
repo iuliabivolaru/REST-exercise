@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang = "en" ng-app="booksApp">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../lib/bootstrap.css">
+    <link rel="stylesheet" href="../lib/app.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="navbar">
+        <div class="navbar-inner">
+        <ul class="nav">
+            <li><a href="#/bookDetails/1">View book</a></li>
+
+
+        </ul>
+        </div>
+    </div>
+    <ng-view>
+    </ng-view>
+</div>
+<script src="../lib/jquery-2.1.4.js"></script>
+<script src="../lib/angular/angular.js"></script>
+<script src="../lib/angular/angular-route.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/controllers/BookController.js"></script>
+<script src="../lib/ui-bootstrap-tpls-0.14.3.js"></script>
+<script src="../lib/bootstrap.js"></script>
+<script src="../js/controllers/StarController.js"></script>
+</body>
+</html>
