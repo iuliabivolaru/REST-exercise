@@ -1,6 +1,6 @@
     'use strict';
     angular.module('booksApp').controller('BookController',
-        function BookController($scope, $http){
+        function BookController($scope, bookData){
         /*var onBookComplete = function(response){
          $scope.book = response.data;
          $http.get($scope.book)
@@ -22,8 +22,12 @@
 
             console.log("TEst");
 
+           bookData.getBookDetails().then(function(data){
+                console.log(data);
+                $scope.book = data;
+            });
 
-        var onBookComplete = function(response) {
+       /* var onBookComplete = function(response) {
             console.log(response.data);
             $scope.book = response.data;
         };
@@ -34,7 +38,7 @@
 
 
         $http.get("http://localhost:8080/rest/books/1")
-            .then(onBookComplete, onError);
+            .then(onBookComplete, onError);*/
 
     });
 
