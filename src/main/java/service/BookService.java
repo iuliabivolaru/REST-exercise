@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import repository.BookRepositoryHibernate;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.io.File;
 import java.util.List;
 
 /**
@@ -48,6 +49,17 @@ public class BookService {
     public List<Book> findAllBooks(){
 
         return bookRepository.findAllBooks();
+    }
+
+    public List<Book> findAllBooksFromDB(){
+
+        return bookRepositoryHibernate.findAllBooksFromDB();
+    }
+
+    public File findBookCoverFromDB(Integer bookId){
+        System.out.println("In service" + bookId);
+
+        return bookRepositoryHibernate.findBookCoverFromDB(bookId);
     }
 
     public List<Book> getBooks(int start, int end){

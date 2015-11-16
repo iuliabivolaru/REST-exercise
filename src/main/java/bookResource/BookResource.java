@@ -90,7 +90,8 @@ public class BookResource {
     @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
     public Response getAllBooks(){
         System.out.println("sss");
-        List<Book> books = bookService.findAllBooks();
+        //List<Book> books = bookService.findAllBooks();
+        List<Book> books = bookService.findAllBooksFromDB();
         if(books == null){
             return Response.status(Response.Status.NOT_FOUND).build();
         }
@@ -109,6 +110,8 @@ public class BookResource {
             return Response.status(Response.Status.BAD_REQUEST).build();
         }
 
+
+
         //Book book = bookService.findBook(bookId);
         Book book = bookService.findBookFromDB(Integer.parseInt(bookId));
         System.out.println("Book found or not");
@@ -121,17 +124,26 @@ public class BookResource {
 
     @GET
     @Produces("images/jpeg")
-    @Path("{bookId}/cover")// http:/localhost:8080/books/1
+    @Path("{bookId}.jpg")// http:/localhost:8080/books/1.jpg
     //grab the id from the params and use it
     //file not found exception
     public Response getCoverImageOfBook(@PathParam("bookId") String bookId) throws FileNotFoundException {
 
-        String cover = "refactoringBook.jpg";
+       /* String cover = "refactoringBook.jpg";
         File file = new File(getClass().getClassLoader().getResource(cover).getFile());
         if (file == null){
             return Response.status(Response.Status.NOT_FOUND).build();
         }
-        return Response.ok().entity(file).build();
+        return Response.ok().entity(file).build();*/
+
+        System.out.println("In resource " + bookId);
+        File bookCover = bookService.findBookCoverFromDB(Integer.parseInt(bookId));
+
+        if(bookCover == null){
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+
+        return Response.ok().entity(bookCover).build();
     }
 
 

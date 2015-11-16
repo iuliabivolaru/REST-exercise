@@ -11,10 +11,13 @@ import java.util.List;
 @Entity
 @NamedQueries({
         @NamedQuery(name = "ExpensiveBooks", query = "SELECT b FROM Book b WHERE b.price > :price"),
-        @NamedQuery(name = "ManyPagesBooks", query = "SELECT b FROM Book b WHERE b.numberOfPages > ?1")
+        @NamedQuery(name = "ManyPagesBooks", query = "SELECT b FROM Book b WHERE b.numberOfPages > ?1"),
+        @NamedQuery(name = "AllBooks", query = "SELECT b FROM Book b"),
+        @NamedQuery(name = "GetBookCover", query = "SELECT b.cover FROM Book b WHERE b.id = :bookId")
 })
 @Table(name="BOOKS")
 public class Book {
+    @XmlElement
     @Id
     @Column(name = "id_book")
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_GEN")

@@ -1,0 +1,33 @@
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Books</div>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>
+
+            </th>
+            <th>Title</th>
+            <th>Rating</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="book in books">
+            <td>
+                <img ng-src="http://localhost:8080/rest/books/{{book.id}}.jpg" class="cardImage" class="bottom-align-right" width="70" height="100">
+            </td>
+            <td>
+                <a href="#/books/{{book.id}}">
+                    {{book.title}}
+                </a>
+            </td>
+            <td>
+                <div><uib-rating ng-model="book.stars" max="5" readonly="true" state-on="'glyphicon-star'" state-off="'glyphicon-star-empty'"></uib-rating></div>
+            </td>
+            <td>{{book.price}} lei</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

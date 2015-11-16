@@ -6,6 +6,7 @@ function BookDetailsService($http){
                         .then(function(response){
                             return response.data;
                             console.log(response.data);
+
                          })
         }
     };

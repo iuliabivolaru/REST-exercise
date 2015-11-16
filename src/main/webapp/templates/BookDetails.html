@@ -72,11 +72,14 @@
                 <h2>{{book.title | uppercase}} </h2>
             </div>
             <div class="panel-body">
-                <p>{{34/56}}</p>
+
             </div>
 
             <!-- Table -->
             <table class="table">
+                <tr>
+                    <img ng-src="http://localhost:8080/rest/books/{{book.id}}.jpg" class="cardImage" class="bottom-align-right" width="200" height="300">
+                </tr>
                 <tr>
                     <td><strong>ISBN</strong></td>
                     <td>{{book.ISBN}}</td>
@@ -99,13 +102,15 @@
                 </tr>
                 <tr>
                     <td><strong>Price</strong></td>
-                    <td>{{book.price}}</td>
+                    <td>{{book.price}} lei</td>
                 </tr>
-                <!--<tr>
-                    <td><strong>Stars</strong></td>
-                    <td>{{book.stars}}</td>
+                <tr>
+                    <td><strong>Rating</strong></td>
+                    <td>
+                        <div><uib-rating ng-model="book.stars" max="5" readonly="true" state-on="'glyphicon-star'" state-off="'glyphicon-star-empty'"></uib-rating></div>
+                    </td>
 
-                </tr>-->
+                </tr>
             </table>
         </div>
 
@@ -119,24 +124,8 @@
        <!-- <div> <span>{{book.stars}} out of
             10
         <div star-rating rating-value="{{book.stars}}"></div>
-
+-->
         </span>
-
-        </div>-->
-        <!--<div class="row">
-            <div class="span3">
-                <div><strong>ISBN:</strong> {{book.ISBN}}</div>
-                <div><strong>Authors:</strong> {{book.authors}}</div>
-                <div><strong>Date:</strong> {{book.date}}</div>
-                <div><strong>Description:</strong> {{book.desc}} </div>
-                <div><strong>Language:</strong> {{book.language}} </div>
-                <div><strong>Number of pages:</strong> {{book.numberOfPages}} </div>
-                <div><strong>Price:</strong> {{book.price}} </div>
-                <div><strong>Stars:</strong> {{book.stars}} </div>
-            </div>
-
-        </div>-->
-
         <hr>
     </div>
 </div>

@@ -5,6 +5,7 @@ import bookModel.Category;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.*;
+import java.io.File;
 import java.util.List;
 
 /**
@@ -37,6 +38,12 @@ public class BookRepositoryHibernate {
         Book b = em.find(Book.class, id);
         return b;
 
+    }
+
+    public List<Book> findAllBooksFromDB(){
+
+         TypedQuery<Book> queryAllBooks = em.createNamedQuery("AllBooks", Book.class);
+         return queryAllBooks.getResultList();
     }
 
     public boolean removeBook(Integer id){
@@ -116,9 +123,23 @@ public class BookRepositoryHibernate {
         return retrievedList;
     }
 
+    public File findBookCoverFromDB(Integer bookId) {
+        System.out.println("In repo:" + bookId);
+        TypedQuery<String> query = em.createNamedQuery("GetBookCover", String.class);
+        query.setParameter("bookId", bookId);
+
+        try {
+
+            String coverPath = query.getSingleResult();
+            return new File(getClass().getClassLoader().getResource(coverPath).getFile());
+        } catch (NoResultException e) {
+            return null;
+        }
+    }
+
 
 //TODO prepared statement! for filter... in GET
-
+//TODO de implem findAllBooks() din baza de date
 
 
 

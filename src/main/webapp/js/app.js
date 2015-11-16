@@ -1,20 +1,24 @@
 'use strict';
 
 
-var booksApp = angular.module('booksApp', ['ngRoute']);
-angular
-    .module('booksApp')
+var booksApp = angular.module('booksApp', ['ngRoute', 'ui.bootstrap']);
+booksApp
     .config(function($routeProvider) {
-        $routeProvider.when('/bookDetails/:bookId',
+        $routeProvider
+            .when('/books',
+            {
+                templateUrl: 'templates/BooksListDetails.html',
+                controller: 'BooksListController'
+            })
+            .when('/books/:bookId',
             {
                 templateUrl: 'templates/BookDetails.html',
                 controller: 'BookController'
-            });
-
-        $routeProvider.otherwise({redirectTo: '/bookDetails/1'});
-       // $locationProvider.html5Mode(true);
-
-        console.log("Should show this");
-
-
+            })
+            .when('/books/add',
+            {
+                templateUrl: 'templates/BookAdd.html',
+                controller: 'BookAddController'
+            })
+            .otherwise({redirectTo: '/books'});
     });
